@@ -1,0 +1,13 @@
+pandas
+xlwings
+scipy
+IPython
+sklearn
+matplotlib
+plotly
+dateparser
+xlrd
+pillow
+cx_Oracle
+xlwt
+PyYAML

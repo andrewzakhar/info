@@ -1,0 +1,42 @@
+version: 1
+
+formatters: #Задается форматтер для текста сообщения лога
+  simple:
+    format: '%(asctime)-30s %(levelname)-11s %(message)s'
+    
+filters: #Задаются три фильтра (debugFilter, infoFilter, errorFilter), каждый из которых пропускает лишь один уровень логов
+  debugFilter:
+    (): myLogger.filter_logs_lvl
+    logs_level: 10 #Уровень debug
+  infoFilter:
+    (): myLogger.filter_logs_lvl
+    logs_level: 20 #Уровень info
+  errorFilter:
+    (): myLogger.filter_logs_lvl
+    logs_level: 40 #Уровень error
+    
+handlers: #Задаются три обработчика. Для каждого из них настраивается минимальный детектируемый уровень логов; устанавливается связь с необходимым фильтром из блока выше
+  debug_handler: 
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: simple
+    filename: logs/debug_log_file.log
+    filters: [debugFilter]
+  info_handler:
+      class: logging.FileHandler
+      level: INFO
+      formatter: simple
+      filename: logs/info_log_file.log
+      filters: [infoFilter]
+  error_handler:
+      class: logging.FileHandler
+      level: ERROR
+      formatter: simple
+      filename: logs/error_log_file.log
+      filters: [errorFilter]
+      
+loggers: #Создаётся новый объект logger с именем "sampleLogger" (в коде необходимо использовать аналогичное имя для создания объекта). 
+  sampleLogger:
+    level: DEBUG #Минимальный уровень детектирования логов данным логгером
+    handlers: [debug_handler,info_handler,error_handler] #Для отключения-убрать из списка (например debug_handler) или добавить для добавления
+    propagate: no #Если данный параметр отключен, то информация не будет отправляться родительскому логгеру (существует корневой родительский логгер root)

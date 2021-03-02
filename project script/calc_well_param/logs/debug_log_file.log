@@ -1,0 +1,4 @@
+2020-06-05 17:21:11,757        DEBUG       Module: "ccalc_pvt"       Function: "calc_pvt_vr"       Current parameters: pksep_atma = 34.666, tIn_C = 90.0, Qliq = 62.4, water_ñut_share = 0.9440000000000001
+2020-06-05 17:23:23,809        DEBUG       Module: "ccalc_pvt"       Function: "calc_pvt_vr"       Current parameters: pksep_atma = 34.666, tIn_C = 90.0, Qliq = 62.4, water_ñut_share = 0.9440000000000001
+2020-06-05 17:24:33,555        DEBUG       Module: "ccalc_pvt"       Function: "calc_pvt_vr"       Current parameters: pksep_atma = 34.666, tIn_C = 90.0, Qliq = 62.4, water_ñut_share = 0.9440000000000001
+2020-06-05 17:25:21,665        DEBUG       Module: "ccalc_pvt"       Function: "calc_pvt_vr"       Current parameters: pksep_atma = 34.666, tIn_C = 90.0, Qliq = 62.4, water_ñut_share = 0.9440000000000001

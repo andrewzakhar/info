@@ -1,0 +1,12 @@
+2020-06-05 17:27:06,400        ERROR       Module: "calc_well_param.ccalc_pvt"       Function: "calc_pvt_vr"
+Traceback (most recent call last):
+  File "C:\Users\Ruslan\Desktop\myBranchViWell\viwell\Ñêðèïò\calc_well_param\ccalc_pvt.py", line 900, in calc_pvt_vr
+    if bg_m3m3 > 0:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+2020-06-05 17:27:06,401        ERROR       Module: "calc_well_param.ccalc_pvt"       Function: "calc_pvt_vr"       Parameters: pksep_atma = 0, tIn_C = 121.5, Qliq = 333.8, water_ñut_share = 0.5710000000000001
+2020-06-05 17:27:07,659        ERROR       Module: "calc_well_param.ccalc_pvt"       Function: "calc_pvt_vr"
+Traceback (most recent call last):
+  File "C:\Users\Ruslan\Desktop\myBranchViWell\viwell\Ñêðèïò\calc_well_param\ccalc_pvt.py", line 900, in calc_pvt_vr
+    if bg_m3m3 > 0:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+2020-06-05 17:27:07,660        ERROR       Module: "calc_well_param.ccalc_pvt"       Function: "calc_pvt_vr"       Parameters: pksep_atma = 0, tIn_C = 117.33333333333334, Qliq = 350.1, water_ñut_share = 0.7490000000000001
